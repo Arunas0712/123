@@ -1,0 +1,13 @@
+body{
+    background-color: #e0c37c;
+    font-family: "Times New Roman";
+}
+div{
+    margin: 20px;
+    padding: 15px;
+    color: orange;
+    border: 1px solid red;
+    background: #7e644d;
+    width: 50%;
+    text-align: justify;
+}

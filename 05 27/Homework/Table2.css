@@ -1,0 +1,23 @@
+table {
+    width: 15%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+    border-left: none;
+    border-right: none;
+}
+.color-brown {
+    background-color: brown;
+    color: white;
+}
+.color-yellow {
+    background-color: lightgoldenrodyellow;
+}
+.color-wheat {
+    background-color: wheat;
+}

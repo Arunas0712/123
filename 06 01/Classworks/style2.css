@@ -1,0 +1,13 @@
+.Flag {
+    border: 1px solid black;
+    background: white;
+    display: table-cell;
+    vertical-align: middle;
+    width: 300px;
+    height:200px;
+    background: radial-gradient(circle, #bc002d 58px, #fff 60px);
+}
+
+
+
+

@@ -1,0 +1,13 @@
+.block {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: #009abf;
+    margin-right: 8px;
+}
+.block:nth-child(odd) {
+    background-color: black;
+}
+.block:hover {
+    background-color: #ff9f19;
+}

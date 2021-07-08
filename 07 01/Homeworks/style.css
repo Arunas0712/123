@@ -1,0 +1,28 @@
+.container {
+    border: 1px solid grey;
+    border-radius: 8px;
+    border-collapse: collapse;
+    padding: 5px;
+}
+.button {
+    text-align: center;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+}
+.p {
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: right;
+    padding-top: 10px;
+}
+.btn-group {
+    margin: 10px;
+    border-radius: 100px;
+}
+
+.modal-header {
+    margin-left: 500px;
+}
+.img {
+    margin-bottom: 30px;
+}

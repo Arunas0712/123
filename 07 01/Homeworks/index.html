@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+
+</head>
+<body>
+<!--    Paspaudus mygtuką iškvieskite alert('Hello World!') START-->
+    <div class="container">
+        <h5>Paspaudus mygtuką iškvieskite <span class="text-danger">alert('Hello World!')</span></h5>
+        <hr>
+        <div class="button">
+            <button type="button" class="btn btn-outline-primary" onclick="alert('Hello World!')">Click On Me</button>
+
+        </div>
+    </div>
+<!--Paspaudus mygtuką iškvieskite alert('Hello World!') END-->
+
+    <br>
+
+<!--    Įvestai reikšmėi priklausomai nuo paspausto mygtuko keičiame reigstrą (Didėles/Mažos raidės) START-->
+    <div class="container">
+        <h5>Įvestai reikšmėi priklausomai nuo paspausto mygtuko keičiame reigstrą (Didėles/Mažos raidės)</h5>
+        <hr>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <label for="input"></label><input type="text" id="input" name="changeCase" placeholder="Fill me in">
+                </div>
+                <div class="col">
+                    <input type="button" value="To Upper Case" onclick="upp();">
+                    <input type="button" value="To Lower Case" onclick="low();">
+                    <input type="button" value="First Upper Case" onclick="fupp();">
+                    <input type="button" value="First Lower Case" onclick="flow();">
+                </div>
+            </div>
+        </form>
+    </div>
+<!--    Įvestai reikšmėi priklausomai nuo paspausto mygtuko keičiame reigstrą (Didėles/Mažos raidės) END-->
+
+    <br>
+
+<!--    Paspaudus mygtuką patikrinkite įvestas reikšmes ir jeigu reikia parodykite klaidų pranešimus START-->
+    <div class="container">
+        <h5>Paspaudus mygtuką patikrinkite įvestas reikšmes ir jeigu reikia parodykite klaidų pranešimus</h5>
+        <ul>
+            <li>
+                element show/hide
+            </li>
+            <li>
+                class add/remove
+            </li>
+        </ul>
+        <hr>
+        <form>
+            <div class="row mb-3">
+                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" placeholder="Enter Email" id="email">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="text" class="col-sm-2 col-form-label">Phone Number</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Enter Phone Number" id="text">
+                </div>
+            </div>
+            <button type="submit" style="margin-left: 220px;" class="btn btn-outline-dark">Save</button>
+        </form>
+    </div>
+<!--    Paspaudus mygtuką patikrinkite įvestas reikšmes ir jeigu reikia parodykite klaidų pranešimus END-->
+
+    <br>
+
+<!--    Pazpaudžius mygtuką užblokokite/atblokokite START-->
+    <div class="container">
+        <h5>Pazpaudžius mygtuką užblokokite/atblokokite <span class="text-danger">input</span></h5>
+        <div class="row">
+            <div class="col-2">
+                <button type="button" style="margin-left: 155px; margin-top: 23px;" class="btn btn-outline-danger" id="block">Block</button>
+            </div>
+            <div class="col">
+                <label for="bl_unbl_entry"></label><input type="text" style="margin-bottom: 20px" class="form-control" placeholder="I'm input! You can try to enter something!" id = "bl_unbl_entry">
+            </div>
+            <div class="col-2">
+                <button type="button" style="margin-right: fill; margin-top: 23px" class="btn btn-outline-success" id="unblock">UnBlock</button>
+            </div>
+        </div>
+    </div>
+<!--    Pazpaudžius mygtuką užblokokite/atblokokite END-->
+
+    <br>
+
+<!--    Užvedus ant paveiksliuko pakeiskite jį START-->
+    <div class="container">
+        <h5>Užvedus ant paveiksliuko pakeiskite jį</h5>
+        <div class="img">
+            <ul class="img">
+            <li>
+                <a href="https://i.imgur.com/PLDVxza.jpg"> https://i.imgur.com/PLDVxza.jpg</a>
+            </li>
+            <li>
+                <a href="https://i.imgur.com/0DElr0H.jpg">https://i.imgur.com/0DElr0H.jpg</a>
+            </li>
+            </ul>
+            <a href="https://i.imgur.com/PLDVxza.jpg" style="margin-left: 500px">
+            <img src="https://i.imgur.com/PLDVxza.jpg"
+                 onmouseover="this.src='https://i.imgur.com/0DElr0H.jpg';"
+                 onmouseout="this.src='https://i.imgur.com/PLDVxza.jpg';" alt="monkey">
+        </a>
+        </div>
+    </div>
+<!--    Užvedus ant paveiksliuko pakeiskite jį END-->
+
+    <br>
+
+<!--Paspaudžius ant mygtuko turi "iškristi" meniu su punktais. Paspaudžius pinktą turi įvykti veiksmas START-->
+    <div class="container">
+        <h5>Paspaudžius ant mygtuko turi "iškristi" meniu su punktais. Paspaudžius pinktą turi įvykti veiksmas</h5>
+        <div class="p">
+
+        <p id="output">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            <br>
+            — Someone famous in Source Title
+        </p>
+        </div>
+        <div class="btn-group">
+            <div class="button">
+            <button type="button"  class="btn btn-outline-danger" data-bs-toggle="dropdown" aria-expanded="false">
+                Cursors
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            <button type="button" style="margin-left: 10px" class="btn btn-outline-danger" data-bs-toggle="dropdown" aria-expanded="false">
+                Colors
+            </button>
+            <ul class="dropdown-menu">
+                <li><a id="red" class="dropdown-item" href="#">Red</a></li>
+                <li><a id="blue" class="dropdown-item" href="#">Blue </a></li>
+                <li><a id="green" class="dropdown-item" href="#">Green</a></li>
+            </ul>
+            <button type="button" style="margin-left: 10px" class="btn btn-outline-danger" data-bs-toggle="dropdown" aria-expanded="false">
+                Borders
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Border Red</a></li>
+                <li><a class="dropdown-item" href="#">Border Blue</a></li>
+                <li><a class="dropdown-item" href="#">Border Green</a></li>
+            </ul>
+            <button type="button" style="margin-left: 10px" class="btn btn-outline-success" data-bs-toggle="dropdown" aria-expanded="false">
+                Reset all
+            </button>
+            </div>
+        </div>
+    </div>
+<!--Paspaudžius ant mygtuko turi "iškristi" meniu su punktais. Paspaudžius pinktą turi įvykti veiksmas END-->
+
+    <br>
+
+<!--Paspaudžius mygtuką parodikite informaciją apie save modalineme lange START    -->
+    <div class="container">
+        <h5>Paspaudžius mygtuką parodikite informaciją apie save modalineme lange</h5>
+        <!-- Button trigger modal -->
+        <button type="button" style="margin-left: 550px;" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Hello, my name is Arunas
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Paspaudžius mygtuką parodikite informaciją apie save modalineme lange END-->
+<br>
+<br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+</html>
