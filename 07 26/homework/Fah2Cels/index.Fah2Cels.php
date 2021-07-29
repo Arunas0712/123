@@ -7,8 +7,6 @@ Papildykime užduotį:  Sukurkime naują php failą, kuris turės laukelį tempe
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convert fahrenheit to Celcius</title>
 </head>
 <body align="center">
@@ -20,7 +18,7 @@ Papildykime užduotį:  Sukurkime naują php failą, kuris turės laukelį tempe
         </label>
         <br><br>
         <input type="submit" name="submit" value="Convert">
-
+    </form>
         <?php
 if(isset($_POST['far']))
 {
