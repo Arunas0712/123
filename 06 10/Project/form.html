@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="container-time">
+        <h2 class="heading">Time Open</h2>
+        <h3 class="heading-days">Monday-Friday</h3>
+        <p>8am - 8pm</p>
+        <h3 class="heading-days">Saturday and sunday</h3>
+        <p>10am - 6pm</p>
+        <hr>
+        <h4 class="heading-phone">Call Us: (123) 456789</h4>
+    </div>
+    <div class="container-form">
+        <form method="post" id="press" action="form.php">
+            <h2 class="heading heading-yellow"><span>Online Booking</span></h2>
+            <div class="form-field">
+                <p>Your Name</p>
+                <label>
+                    <input type="text" name="name" required>
+                    <span class="error">  *</span>
+                </label>
+            </div>
+            <div class="form-field">
+                <p>Your email</p>
+                <label>
+                    <input type="email" name="email" required>
+                    <span class="error">  *</span>
+                </label>
+            </div>
+            <div class="form-field">
+                <p>Date</p>
+                <label>
+                    <input type="date" name="date" required>
+                    <span class="error">  *</span>
+                </label>
+            </div>
+            <div class="form-field">
+                <p>Time</p>
+                <label>
+                    <input id="time" type="time" name="time" min="08:00" max="19:00" required>
+                    <span class="error">  *</span>
+                </label>
+            </div>
+            <div class="form-field">
+                <p>Service</p>
+                <label for="#"></label><select name="select" id="#" required>
+                    <option selected="selected">--Please Select --</option>
+                    <option value="1">HAIRCUT</option>
+                    <option value="2">HOT TOWEL SHAVES</option>
+                    <option value="3">HOT TOWEL FACIALS</option>
+                    <option value="4">BEARD SERVICES</option>
+                </select>
+                <span class="error">  *</span>
+            </div>
+            <button type="submit" id="submitbutton" name="submit" value="Submit" class="press">book now</button><br>
+        </form>
+    </div>
+</div>
+</body>
+</html>

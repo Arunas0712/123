@@ -1,0 +1,97 @@
+/*Rgistration Form*/
+body {
+    background-image: url("Img/form2.jpg");
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 1px;
+
+}
+
+.container {
+    background-color: white;
+    margin: 200px;
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border-radius: 20px;
+    opacity: 85%;
+
+}
+.container-time {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    padding: 50px;
+    outline: 3px dashed crimson;
+    outline-offset: -30px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+.heading {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.heading-days {
+    color: darkgray;
+    font-size: 30px;
+
+}
+
+.heading-phone {
+    font-size: 20px;
+}
+.container-form {
+    padding: 20px 0;
+    margin: 0 auto;
+    color: black;
+    border-radius: 20px;
+}
+.container-form span {
+    color: crimson;
+}
+form {
+    display: grid;
+    grid-row-gap: 20px;
+    border-radius: 20px;
+
+}
+form p {
+    font-weight: 600;
+}
+.form-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+input,select {
+    padding: 10px 15px;
+}
+.press {
+    display: inline-block;
+    padding: 10px 30px;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 30px;
+    transition: 0.3s ease;
+    transition-property: background-color, color;
+    border-radius: 20px;
+
+}
+.press:hover {
+    color: crimson;
+    background-color: crimson;
+}
+.complete {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 200px;
+    color: crimson;
+    text-transform: uppercase;
+}
