@@ -3,7 +3,7 @@
 //Išvesti į ekraną 10 kartų žodį 'Labas';//
 
 foreach(range(1, 10) as $i)
-    echo 'Hello'. PHP_EOL;
+    echo 'Hello';
 
 //Išvesti į ekraną skaičius nuo 1 iki 10;
 

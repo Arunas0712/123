@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form  method="post" action="index.php">
+    <label>
+        <input type="text" name="num1" placeholder="number 1">
+    </label>
+
+        <label for="mathEq">Select action</label>
+        <select name="operator" id="mathEq">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="square">square</option>
+        </select>
+
+    <label>
+        <input type="text" name="num2" placeholder="number 2">
+    </label>
+
+    <br><br>
+    <button type="submit" name="submit" value="submit">Calculate</button>
+</form>
+<p>The result is:</p>
+</body>
+</html>

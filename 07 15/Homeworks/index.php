@@ -17,22 +17,30 @@ $str = 'Lorem ipsum dolor sit amet, consectetur';
 
 function negative($number)
 {
-
+    if (is_numeric($number) == FALSE){
+        return NULL;
+    }
     return $number * -1;
 }
 
 var_dump(negative(3));
+var_dump(negative('5'));
 
 //Sukurkite funkciją kauliukas, kuri imituotų kauliuko metimą. (Į ekraną atspaudintų atsitiktinį skaičių nuo 1 iki 6); Užuomina: rand();
-function dice_roll() {
+function diceroll() {
 
     return rand(1, 6);
 }
-var_dump(dice_roll());
+var_dump(diceroll());
 
 //Parašykite funkciją pusePloto, kuri priimtų 2 argumentus ir išvestų į ekraną pusę abiejų skaičių sandaugą.
 
-
+function halfArea($a, $b)
+{
+    return ($a * $b) / 2;
+}
+var_dump(halfArea(5, 7));
+var_dump(halfArea(1, 2));
 
 
 
@@ -56,12 +64,12 @@ var_dump(areYouStillYoung($age));
 //Sukurkite funkciją, kuri priimtų argumentą farenheitas ir laipsnius iš farenheito konvertuotų į celsijų.
 
 
-$given_value = 88;
+$givenvalue = 88;
 
-function fahrenheit_to_celsius($given_value)
+function fahrenheittocelsius($givenvalue)
 {
-    $celsius=5/9*($given_value-32);
+    $celsius=5/9*($givenvalue-32);
     return " $celsius celsius" ;
 }
 
-var_dump(fahrenheit_to_celsius($given_value));
+var_dump(fahrenheittocelsius($givenvalue));
